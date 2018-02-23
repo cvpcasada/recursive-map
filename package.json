@@ -1,6 +1,6 @@
 {
   "name": "recursive-map",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/recursive-map.js",
   "module": "dist/recursive-map.es.js",
   "scripts": {
