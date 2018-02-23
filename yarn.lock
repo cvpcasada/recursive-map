@@ -371,11 +371,9 @@ csso@~2.3.1:
     clap "^1.0.9"
     source-map "^0.5.3"
 
-curry2@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/curry2/-/curry2-1.0.3.tgz#38191d55f1060bfea47ca08009385bb878f6612f"
-  dependencies:
-    fast-bind "^1.0.0"
+curry-n@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/curry-n/-/curry-n-1.0.2.tgz#5fceb5ec782a7a689fcbe4c78a21abf84596e0dc"
 
 decamelize@^1.1.2:
   version "1.2.0"
@@ -454,10 +452,6 @@ extglob@^0.3.1:
   resolved "https://registry.yarnpkg.com/extglob/-/extglob-0.3.2.tgz#2e18ff3d2f49ab2765cec9023f011daa8d8349a1"
   dependencies:
     is-extglob "^1.0.0"
-
-fast-bind@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/fast-bind/-/fast-bind-1.0.0.tgz#7fa9652cb3325f5cd1e252d6cb4f160de1a76e75"
 
 fastparse@^1.1.1:
   version "1.1.1"

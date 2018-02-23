@@ -1,6 +1,6 @@
 {
   "name": "recursive-map",
-  "version": "1.1.0",
+  "version": "0.0.2",
   "main": "dist/recursive-map.js",
   "module": "dist/recursive-map.es.js",
   "scripts": {
@@ -8,7 +8,9 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "curry2": "^1.0.3",
     "microbundle": "^0.4.4"
+  },
+  "dependencies": {
+    "curry-n": "^1.0.2"
   }
 }

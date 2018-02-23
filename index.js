@@ -1,11 +1,9 @@
-import curry2 from "curry2";
+import curryN from "curry-n";
 
-const map = curry2((fn, arr) => arr.map(fn));
-
-export const mapTree = curry2((fn, childProp, obj) => {
+export const mapTree = curryN(2, (fn, childProp, obj) => {
   return fn(
     Object.assign({}, obj, { [childProp]: recursiveMap(obj[childProp]) })
   );
 });
 
-export const recursiveMap = (fn, childProp) => map(mapTree(fn, childProp));
+export const recursiveMap = curryN(3, (fn, childProp, arr) => arr.map(mapTree(fn, childProp)));
