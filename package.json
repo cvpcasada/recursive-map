@@ -1,0 +1,14 @@
+{
+  "name": "recursive-map",
+  "version": "1.0.0",
+  "main": "dist/recursive-map.js",
+  "module": "dist/recursive-map.es.js",
+  "scripts": {
+    "build": "microbundle --sourcemap=false --strict --compress=false"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "curry2": "^1.0.3",
+    "microbundle": "^0.4.4"
+  }
+}
