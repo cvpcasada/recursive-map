@@ -1,6 +1,6 @@
 {
   "name": "recursive-map",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/recursive-map.js",
   "module": "dist/recursive-map.es.js",
   "author": "Cyrus Venn Casada",
