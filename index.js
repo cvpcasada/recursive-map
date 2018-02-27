@@ -7,13 +7,13 @@ import curryN from "curry-n";
  * @param {Object[]} arr - The Array of trees to be mapped
  * @returns {Object} A new tree being the result of the callback function
  */
-export const mapTree = (fn, childKey, currentValue) => {
+export const mapTree = curryN(3, (fn, childKey, currentValue) => {
   if (Array.isArray(currentValue[childKey])) {
     currentValue[childKey] = recursiveMap(fn, childKey, currentValue[childKey]);
   }
 
   return fn(currentValue);
-};
+});
 
 /**
  * @name recursiveMap
@@ -23,5 +23,5 @@ export const mapTree = (fn, childKey, currentValue) => {
  * @returns {Object[]} A new array of trees with each tree being the result of the callback function
  */
 export const recursiveMap = curryN(3, (fn, childKey, arr) =>
-  arr.map(value => mapTree(fn, childKey, value))
+  arr.map(mapTree(fn, childKey))
 );

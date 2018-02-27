@@ -5,7 +5,7 @@
   "module": "dist/recursive-map.es.js",
   "author": "Cyrus Venn Casada",
   "scripts": {
-    "build": "microbundle --sourcemap=false --strict --compress=false",
+    "build": "microbundle --sourcemap=false --strict",
     "dev": "microbundle watch",
     "docs": "documentation readme index.js -q --section API"
   },
