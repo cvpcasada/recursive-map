@@ -1,18 +1,19 @@
-import curryN from "curry-n";
+import curryN from 'curry-n';
 
 /**
  * @name mapTree
  * @param {function} fn - Function that produces a new tree object
  * @param {string} childkey - Reference key to the children nodes in the object
- * @param {Object[]} arr - The Array of trees to be mapped
+ * @param {Object} node - The node to be traversed to
  * @returns {Object} A new tree being the result of the callback function
  */
-export const mapTree = curryN(3, (fn, childKey, currentValue) => {
-  if (Array.isArray(currentValue[childKey])) {
-    currentValue[childKey] = recursiveMap(fn, childKey, currentValue[childKey]);
-  }
-
-  return fn(currentValue);
+export const mapTree = curryN(3, (fn, childKey, node) => {
+  return {
+    ...fn(node),
+    [childKey]: Array.isArray(node[childKey])
+      ? recursiveMap(fn, childKey, node[childKey])
+      : node[childKey],
+  };
 });
 
 /**

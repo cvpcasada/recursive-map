@@ -11,8 +11,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "documentation": "^5.4.0",
-    "microbundle": "^0.4.4"
+    "documentation": "^12.1.1",
+    "microbundle": "^0.11.0"
   },
   "dependencies": {
     "curry-n": "^1.0.2"
