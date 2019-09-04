@@ -1,18 +1,19 @@
 {
   "name": "recursive-map",
-  "version": "0.1.2",
+  "version": "1.0.0",
+  "source": "index.js",
   "main": "dist/recursive-map.js",
-  "module": "dist/recursive-map.es.js",
+  "module": "dist/recursive-map.modern.mjs",
   "author": "Cyrus Venn Casada",
   "scripts": {
-    "build": "microbundle --sourcemap=false --strict",
+    "build": "microbundle --strict -f modern,cjs",
     "dev": "microbundle watch",
     "docs": "documentation readme index.js -q --section API"
   },
   "license": "MIT",
   "devDependencies": {
-    "documentation": "^5.4.0",
-    "microbundle": "^0.4.4"
+    "documentation": "^12.1.1",
+    "microbundle": "0.12.0-next.6"
   },
   "dependencies": {
     "curry-n": "^1.0.2"

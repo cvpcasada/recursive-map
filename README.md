@@ -21,33 +21,26 @@ import { recursiveMap, mapTree } from 'recursive-map';
 #### Table of Contents
 
 -   [mapTree](#maptree)
+    -   [Parameters](#parameters)
 -   [recursiveMap](#recursivemap)
+    -   [Parameters](#parameters-1)
 
 ### mapTree
 
-**Parameters**
+#### Parameters
 
 -   `fn` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** Function that produces a new tree object
 -   `childkey` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Reference key to the children nodes in the object
--   `arr` **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)>** The Array of trees to be mapped
+-   `node` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The node to be traversed to
 
 Returns **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** A new tree being the result of the callback function
 
 ### recursiveMap
 
-**Parameters**
+#### Parameters
 
 -   `fn` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** Function that produces an element for the new Array of trees
 -   `childkey` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Reference key to the children nodes in the object
 -   `arr` **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)>** The Array of trees to be mapped
 
 Returns **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)>** A new array of trees with each tree being the result of the callback function
-
-### Reporting Issues
-
-Found a problem? Want a new feature? First of all, see if your issue or idea has [already been reported](../../issues).
-If not, just open a [new clear and descriptive issue](../../issues/new).
-
-### License
-
-MIT License © Cyrus Venn Casada
